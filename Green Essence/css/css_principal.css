@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'fonte';
+    src: url('fonte.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	#banner-index {
+	
+	background-image: url('Imagens/fundo_index.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+	width: 100%;
+	
+	}
+	
+	#nomezincentralhome{
+		margin-top:7%;
+		text-align:center;
+		
+	}
+	
+	.wrapper {
+		min-height: 100%;
+		margin-bottom: -50px;
+		}
+	
+	#bannerpt2home{
+	margin-top:5%;
+	}
+	
+	#textos-cardapio{
+		margin-top:7%;
+		text-align:center;
+	}
+	
+	#texto-dicas{
+		margin-top:7%;
+		text-align:center;
+	}
+	
+	#texto-sobre{
+		text-align:center;
+		margin-top:7%;
+	}
+	
+	#texto-contato{
+		
+		text-align:center;
+		margin-top:7%;
+	}
+	
+
+	
+	/*.fade{
+		-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+		
+	}*/
+	
+	
+	html{
+		height:100%;
+		 margin: 0;
+	}
+	
+	body{
+	display: flex;
+    flex-direction: column;
+	background-color:#F8F9F1;
+	
+ /* font-family: Arial;*/
+	}
+	.footer{
+	background: #F8F9F1;
+	color:#995830;
+	}
+ 
+    
+  .about-company{
+    i{
+		font-size: 25px;
+		}
+		
+    a{
+      color:#995830;
+      transition: color .2s;
+      &:hover{color:#995830}
+    }
+  } 
+  .location{
+    i{
+		color:#995830;
+		font-size: 18px;
+		}
+  }
+  .copyright p{
+	  
+	  border-top:1px solid #995830;
+	  } 
+
+	
+	#texto_central{
+		
+		padding-top: 5%;
+		padding-bottom: 5%;
+		position: center;
+		transition: transform 1s;
+		transform: translateX(2) scale(0.5);
+		
+	}
+	
+	#texto_central:hover{
+		
+	transform: translateX(5px) scale(1.05);
+		
+	}
+	
+	#frase_inicio{
+		
+		color: white;
+	}
+	
+	
+	
+
+/* O Botao das tabs*/
+.tablink {
+  background-color:#F8F9F1;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  animation: fadeEffect 1s; 
+}
+
+/*Aqui é quando a gente passa o mouse em cima*/
+.tablink:hover {
+	animation: fadeEffect 1s;
+  background-color: #C5FFB2;
+  
+}
+
+/* Aqui é o conteuodo interno das tabs */
+.tabcontent {
+  color: #995830;
+  display: none;
+  
+  height: 100%;
+  animation: fadeEffect 1s; 
+  /*border-width: 10px 10px 10px 10px;
+  border-color: #F8F9F1 #F8F9F1 #F8F9F1 #F8F9F1; 
+  border-style: dashed dotted;
+    padding-right:10px;*/
+}
+
+@keyframes fadeEffect {
+  from {
+	  opacity: 0;
+	  }
+	  
+  to {
+	  opacity: 1;
+	  }
+}
+
+#redessociais{
+
+	
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  padding-left:4%;
+   padding-right:1%;
+}
+
+.column figure{
+	
+	margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+    
+}
+
+.column figure img{
+	
+	display:block;
+    position:relative;
+    z-index:10;
+    margin:-15px 0
+    
+}
+.column figure figcaption{
+	
+	display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+    
+}
+
+.column figure h5{
+	
+    color:#995830;
+    font-size:20px;
+    text-align:center;
+    
+}
+
+.column figure p{
+	
+	display:block;
+    font-size:16px;
+    line-height:18px;
+    margin:0;
+    color:#995830;
+    text-align:center;
+}
+
+.column figure figcaption{
+	
+	top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color:#C5FFB2;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.column figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.column figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.column figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}*/
+
+
+	
+
+	
+	
+	
+	
